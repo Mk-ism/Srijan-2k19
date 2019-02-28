@@ -40,7 +40,7 @@ h1 {
 
 
 .header h1{
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 
 p {
@@ -69,22 +69,40 @@ p {
   /* background: rgba(200,200,200, .7); */
   box-shadow: 0 0 10px rgba(0, 0, 0, .8);
   position: relative;
-  font-size: 1.2em;
 }
+
 #section1 .text{
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right top, #11305e, #006399, #0097a5, #00c777, #a8eb12);  opacity: .8;
 }
 #section2 .text{
-  top: 50%;
-  background-image: linear-gradient(to right bottom, #674b5b, #885055, #9b5d41, #96752a, #74922c);  margin-left: auto;
+  top: 40%;
+  background-image: linear-gradient(to right bottom, #674b5b, #885055, #9b5d41, #96752a, #74922c);
+  margin-left: auto;
   margin-right: auto;
 }
 #section3 .text{
   margin-left: auto;
   margin-right: 0;
 }
+
+@media screen and (min-width: 601px) {
+  .text {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 10px;
+    width: 70%;
+  }
+}
+
+
+
+
 #section4 .text{
   top: 30%;
   left: 2%;
