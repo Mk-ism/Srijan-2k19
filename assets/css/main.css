@@ -89,7 +89,7 @@ p {
 
 @media screen and (min-width: 601px) {
   .text {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
@@ -222,7 +222,7 @@ p {
 .btn_ctnr{
   position: fixed;
   top:2%;
-  left:70%;
+  right: 10%;
   margin:10px;
   display: inline-flex;
   z-index: 10;
@@ -234,6 +234,13 @@ p {
   /* border: 1px #ffffff solid;
   border-radius: 2px; */
 }
+
+@media screen and (max-width: 600px) {
+  .btn {
+    font-size: 10px;
+  }
+}
+
 .btn > a{
   text-decoration:none;
   color: #ffffff;
