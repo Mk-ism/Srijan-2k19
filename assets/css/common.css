@@ -1,0 +1,84 @@
+/* Navbar logo */
+
+.navbar {
+	position: fixed ;
+	top: 0;
+	width: 100%;
+    z-index: 10;
+    /* background-attachment: fixed; */
+}
+
+.navbar-logo {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 100px;
+}
+
+/* Social icon */
+
+.social-div {
+	position: fixed;
+	bottom: 8px;
+	width: 100%;
+	z-index: 10;
+	display: flex;
+	padding: 0 17px;
+}
+
+.social-div a {
+	display: flex;
+	width: 45px;
+	font-size: 20px;
+	height: 45px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	color: #ccc;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar-logo {
+		margin-top: 15px;
+		margin-left: 15px;
+		width: 40px;
+	}
+}
+
+.social-div {
+	padding: 0 7px;
+}
+
+.social-div a {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+}
+
+
+.social-div a:hover {
+	color: #ffffff;
+}
+
+.facebook:hover {
+	border: 1px solid #3c5a99;
+	background-color: #3c5a99;
+}
+
+.twitter:hover {
+	border: 1px solid #38A1F3;
+	background-color: #38A1F3;
+}
+
+.instagram:hover {
+	border: 1px solid #fb3958;
+	background-color: #fb3958;
+}
+
+.youtube:hover {
+	border: 1px solid #ff0000;
+	background-color: #ff0000;
+}
