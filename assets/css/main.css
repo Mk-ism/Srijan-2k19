@@ -113,6 +113,12 @@ p {
   box-shadow: none;
 }
 
+@media screen and (max-width: 600px) {
+  #section4 .text {
+    font-size: 15px;
+    width: 70%;
+  }
+}
 
 
 
@@ -156,6 +162,7 @@ p {
   /* background: #111; */
   background-image: linear-gradient(to right bottom, #8c0d97, #7c0074, #680056, #52003b, #3b0325);
   height: 100vh;
+  overflow: hidden;
 }
 
 .site-map {
@@ -237,7 +244,13 @@ p {
 
 @media screen and (max-width: 600px) {
   .btn {
-    font-size: 10px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .btn_ctnr {
+    top: 3%;
+    right: 15%;
   }
 }
 
@@ -286,8 +299,19 @@ font-size: 1.5em;
 	cursor: pointer;
 	transition: opacity 0.2s linear;
   }
+
+  @media screen and (max-width: 600px) {
+    .open {
+      top: 20px;
+      right: 20px;
+      height: 25px;
+      width: 25px;
+    }
+  }
   
-  .open:hover { opacity: 0.8; }
+  .open:hover {
+    opacity: 0.8;
+  }
   
   .open span {
 	display: block;
