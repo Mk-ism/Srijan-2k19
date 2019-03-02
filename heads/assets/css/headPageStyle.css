@@ -61,6 +61,12 @@
 			transition: 0.5s ease;
 			filter: none;
 		}
+		@media (orientation: portrait) or (max-width: 600px){
+			.flex-container > .card > img{
+			filter: none;
+			transition: 0.5s ease;
+		}
+		}
 		.navbar-logo {
 		    margin-top: 20px;
 		    margin-left: 20px;

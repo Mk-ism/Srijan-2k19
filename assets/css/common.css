@@ -231,11 +231,11 @@
 
 .btn > a{
   text-decoration:none;
-  color: #b042f4;
+  color: #c5c0d3;
 }
 
 .btn > a:hover{
-  color: #00dddd;
+  color: white;
 }
 
 @media screen and (max-width: 600px) {

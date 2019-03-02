@@ -18,7 +18,7 @@ body {
   margin:0;
   padding:0;
   height: 100%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
 }
 
 .main-sections {
@@ -34,9 +34,10 @@ body {
 
 /*SECTION PARTS SIZING*/
 p {
+  text-align: center;
   font-size: 1.2em;
   line-height: 150%;
-  color: #333;
+  color: white;
 }
 .section {
   position: relative;
@@ -61,17 +62,25 @@ p {
 
 /* Different section properties */
 #section1 .text{
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
   background-image: linear-gradient(to right top, #11305e, #006399, #0097a5, #00c777, #a8eb12);  opacity: .8;
 }
 #section2 .text{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background-image: linear-gradient(to right bottom, #674b5b, #885055, #9b5d41, #96752a, #74922c);
+  color: white;
+  box-shadow: none;
   margin-left: auto;
   margin-right: auto;
+}
+
+#section2 p{
+  color: white;
 }
 #section3 .text{
   margin-left: auto;
@@ -104,7 +113,7 @@ p {
   top: 30%;
   left: 2%;
   width: 80%;
-  font-size: 2em;
+  font-size: 1em;
   margin-left: auto;
   margin-right: auto;
   box-shadow: none;
@@ -145,7 +154,7 @@ p {
   background-image: linear-gradient(to right bottom, #204206, #3c3200, #491e00, #490913, #3b0325);
   height: 100vh;
   overflow: hidden;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
 
 }
 /* ########################### Section3 css ############################# */
@@ -222,11 +231,11 @@ p {
   justify-content: center;
 }
 .sec4-flex{
-  width: 400px;
-  margin: 10px;
+  width: 150px;
+  margin: 1px;
   padding: 15px;
-  text-align: centre;
-  font-size: 1em;
+  text-align: center; 
+  font-size: 1.25em;
   line-height: 5px;
   color: #e8e5be;
 }
