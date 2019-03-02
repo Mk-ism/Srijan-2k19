@@ -90,6 +90,9 @@ p {
   .text {
     font-size: 10px;
     width: 80%;
+    padding: 4px 20px;
+    top: 50%;
+    opacity: .6;
   }
 }
 
