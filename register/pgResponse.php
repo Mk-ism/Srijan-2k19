@@ -14,7 +14,7 @@ $isValidChecksum = "FALSE";
 $paramList = $_POST;
 $paytmChecksum = isset($_POST["CHECKSUMHASH"]) ? $_POST["CHECKSUMHASH"] : ""; //Sent by Paytm pg
 
-//Verify all parameters received from Paytm pg to your application. Like MID received from paytm pg is same as your application’s MID, TXN_AMOUNT and ORDER_ID are same as what was sent by you to Paytm PG for initiating transaction etc.
+//Verify all parameters received from Paytm pg to your application. Like MID received from paytm pg is same as your applicationï¿½s MID, TXN_AMOUNT and ORDER_ID are same as what was sent by you to Paytm PG for initiating transaction etc.
 $isValidChecksum = verifychecksum_e($paramList, PAYTM_MERCHANT_KEY, $paytmChecksum); //will return TRUE or FALSE string.
 
 
@@ -31,12 +31,12 @@ if($isValidChecksum == "TRUE") {
 	}
 
 	// if (isset($_POST) && count($_POST)>0 )
-	// { 
+	// {
 	// 	foreach($_POST as $paramName => $paramValue) {
 	// 			echo "<br/>" . $paramName . " = " . $paramValue;
 	// 	}
 	// }
-	
+
 
 }
 else {
@@ -57,10 +57,17 @@ else {
 
 
 <form method="post" action="siteRedirect.php" id="mailForm">
-	<input type="text" name="txnStatus" value="<?php echo $_POST['STATUS']; ?>" hidden required />
-	<input type="text" id="fullName" name="fullName" hidden required />
+	<input type="email" id="email" name="email" hidden required />
+	<input type="text" id="custID" name="custID" hidden required />
 	<input type="text" id="regID" name="regID" hidden required />
-	<input type="email" id="custEmail" name="custEmail" hidden required />
+	<input type="text" id="fullName" name="fullName" hidden required />
+	<input type="text" id="events" name="events" hidden required />
+	<input type="text" id="pronite" name="pronite" hidden required />
+	<input type="text" id="accomodation" name="accomodation" hidden required />
+	<input type="text" id="merchandise" name="merchandise" hidden required />
+	<input type="text" name="txnAmount" value="<?php echo $_POST['TXNAMOUNT']; ?>" hidden required />
+	<input type="text" name="txnID" value="<?php echo $_POST['TXNID']; ?>" hidden required />
+	<input type="text" name="txnStatus" value="<?php echo $_POST['STATUS']; ?>" hidden required />
 </form>
 
 <script src="firebase.js"></script>
@@ -88,7 +95,7 @@ else {
 </script>
 
 <?php
-	
+
 	$userID = str_replace('ORDS', '', $_POST['ORDERID']);
 
 	echo "<script>".
@@ -101,9 +108,14 @@ else {
 		});".
 		"firebase.database().ref('/register/" . $userID . "').once('value')
 			.then(function(snapshot){
-				document.getElementById('fullName').value = snapshot.val().firstName + ' ' + snapshot.val().lastName;
+				document.getElementById('email').value = snapshot.val().email;
+				document.getElementById('custID').value = snapshot.val().CUST_ID;
 				document.getElementById('regID').value = snapshot.val().id;
-				document.getElementById('custEmail').value = snapshot.val().email;
+				document.getElementById('fullName').value = snapshot.val().firstName + ' ' + snapshot.val().lastName;
+				document.getElementById('events').value = snapshot.val().events;
+				document.getElementById('pronite').value = snapshot.val().pronite;
+				document.getElementById('accomodation').value = snapshot.val().accomodation;
+				document.getElementById('merchandise').value = snapshot.val().merchandise;
 				document.getElementById('mailForm').submit();
 			});".
 	"</script>";
