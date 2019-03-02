@@ -173,18 +173,20 @@
 	
 	.sub-menu li a {
 	  color: #fff;
-	  font-family: 'Lato', Arial, Helvetica, sans-serif;
+	  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	  font-size: 16px;
 	  width: 100%;
 	  display: block;
 	  float: left;
-	  line-height: 40px;
+		line-height: 40px;
+		text-decoration: none;
+		text-transform: uppercase;
 	}
 	
 	.oppenned .sub-menu {
 	  opacity: 1;
-	  height: 400px;
-	  width: 400px;
+	  height: 500px;
+	  width: 500px;
 	}
 	
 	.oppenned span:nth-child(2) { overflow: visible; }
@@ -198,8 +200,8 @@
 	.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(12px) translateX(12px); }
 	
 	.oppenned span:nth-child(2) {
-	  height: 400px;
-	  width: 400px;
+	  height: 500px;
+	  width: 500px;
 	  right: -160px;
 	  top: -160px;
 	  border-radius: 50%;
@@ -229,7 +231,7 @@
 
 .btn > a{
   text-decoration:none;
-  color: #ffffff;
+  color: red;
 }
 
 .btn > a:hover{
