@@ -23,7 +23,6 @@ body {
   font-family: Oswald;
 }
 
-
 .main-sections {
   margin:0;
   padding:0;
@@ -33,17 +32,7 @@ body {
   perspective: 1px;
 }
 
-
 /*SECTION PARTS SIZING*/
-h1 {
-  font-size: 250%
-}
-
-
-.header h1{
-  /* margin-top: -20px; */
-}
-
 p {
   font-size: 1.2em;
   line-height: 150%;
@@ -59,8 +48,6 @@ p {
   background: 50% 50% / cover;  
 }
 
-
-
 /*SECTION DATA BOXES*/
 .text {
   width: 60%;
@@ -72,6 +59,7 @@ p {
   position: relative;
 }
 
+/* Different section properties */
 #section1 .text{
   margin-left: auto;
   margin-right: auto;
@@ -93,16 +81,12 @@ p {
     font-size: 1em;
   }
 }
-
 @media screen and (max-width: 600px) {
   .text {
     font-size: 10px;
     width: 80%;
   }
 }
-
-
-
 
 #section4 .text{
   top: 30%;
@@ -121,42 +105,32 @@ p {
   }
 }
 
-
-
 /*SECTION IMAGES*/
 #title {
-  /* background-image: url("http://i.imgur.com/kLEnZ9o.jpg"); */
   background-attachment: fixed;  
 }
 #section1{
   background-image: url("../images/div2.png");
-  /* background-image: linear-gradient(to left bottom, #272523, #221e1c, #1d1718, #160f14, #09050f); */
   transform: translateZ(-1px) scale(2.1);
   z-index:-1;
   height: 100vh;
 }
 #section2 {
-  /* background-image: url("http://i.imgur.com/SYAARx7.jpg"); */
   background-image: linear-gradient(to bottom, #010711, #00132f, #00194c, #081a68, #36107e);
   background-attachment: fixed;
   height: 100vh;
-
-
 }
 #section3{
   background-image: linear-gradient(to right bottom, #0a1e57, #29226b, #48237d, #691f8c, #8c0d97);  
   transform: translateZ(-.9px) scale(2);
   z-index:-1;
   height: 100vh;
-
 }
 #section4{
-  /* background: #111; */
   background-image: linear-gradient(to right bottom, #8c0d97, #7c0074, #680056, #52003b, #3b0325);
   height: 100vh;
   overflow: hidden;
 }
-
 /* section 3 css */
 
 .flex-container {
@@ -164,7 +138,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .flex-container > div {
   width: 150px;
   margin: 10px;
@@ -177,37 +150,28 @@ p {
   padding-bottom: 15px;
   text-align: center;
 }
-
 .counter1{
   margin: 10px;
 }
-
-
-
-
-
 .stats{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 5px;
 }
+.top-stat {
+  padding-top: 150px;
+  transition: top 1s ease;
+  color: #e8e5be;
+  font-size: 1.5em;
+  }
 @media (orientation: portrait) {
   .stats {
     padding: 1px;
   }
-
 }
 
-.top-stat {
-padding-top: 150px;
-transition: top 1s ease;
-color: #e8e5be;
-font-size: 1.5em;
-}
-
-/* </ Navigation> */
-
+/* Section4 css */
 
 .site-map {
   width: 70%;
@@ -229,7 +193,14 @@ font-size: 1.5em;
 #section4 > h2 {
   text-align: center;
 }
-
+.quick-links > a{
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration:none;
+}
+.quick-links > a:hover{
+  color: #00dddd;
+}
 @media screen and (max-width: 600px) {
   .site-map {
     width: 90%;
@@ -241,14 +212,4 @@ font-size: 1.5em;
     margin: 5px;
     line-height: 1px;
   }
-}
-
-
-.quick-links > a{
-  cursor: pointer;
-  color: #ffffff;
-  text-decoration:none;
-}
-.quick-links > a:hover{
-  color: #00dddd;
 }
