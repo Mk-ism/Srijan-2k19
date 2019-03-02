@@ -157,27 +157,6 @@ p {
   overflow: hidden;
 }
 
-.site-map {
-  margin: auto;
-  padding: 5px;
-}
-
-.quick-links{
-  padding: 10px;
-  padding-right: 170px;
-}
-.quick-links > a{
-  cursor: pointer;
-  color: #ffffff;
-  text-decoration:none;
-  margin: 10px;
-  padding: 5px;
-}
-.quick-links > a:hover{
-  color: #00dddd;
-}
-
-
 /* section 3 css */
 
 .flex-container {
@@ -232,7 +211,6 @@ font-size: 1.5em;
 
 .site-map {
   width: 70%;
-  color: #e8e5be;;
 }
 .flex-container2 {
   display: flex;
@@ -246,6 +224,7 @@ font-size: 1.5em;
   text-align: centre;
   font-size: 1em;
   line-height: 5px;
+  color: #e8e5be;
 }
 #section4 > h2 {
   text-align: center;
@@ -262,4 +241,14 @@ font-size: 1.5em;
     margin: 5px;
     line-height: 1px;
   }
+}
+
+
+.quick-links > a{
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration:none;
+}
+.quick-links > a:hover{
+  color: #00dddd;
 }
