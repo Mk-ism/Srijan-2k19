@@ -131,7 +131,7 @@ p {
   height: 100vh;
   overflow: hidden;
 }
-/* section 3 css */
+/* ########################### Section3 css ############################# */
 
 .flex-container {
   display: flex;
@@ -170,8 +170,24 @@ p {
     padding: 1px;
   }
 }
+@media screen and (max-width: 600px) {
+  .flex-container > div {
+    font-size: 5px;
+    margin: 5px;
+    width: 40%;
 
-/* Section4 css */
+  }
+  .heading {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  .top-stat {
+    padding-top: 50px;
+  }
+}
+
+
+/* ########################### Section4 css ############################# */
 
 .site-map {
   width: 70%;
