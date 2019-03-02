@@ -144,6 +144,7 @@ p {
   text-align: center;
   /* line-height: 2px; */
   font-size	: 15px;
+  top: 10%;
 }
 .heading{
   font-family: 'Montserrat', Verdana, 'Geneva', Tahoma, sans-serif;
@@ -159,6 +160,9 @@ p {
   flex-wrap: wrap;
   padding: 5px;
 }
+.stats > p {
+  color: #0f8c64;
+}
 .top-stat {
   padding-top: 150px;
   transition: top 1s ease;
@@ -172,14 +176,14 @@ p {
 }
 @media screen and (max-width: 600px) {
   .flex-container > div {
-    font-size: 5px;
+    font-size: 8px;
     margin: 5px;
     width: 40%;
 
   }
   .heading {
-    font-size: 10px;
     padding-bottom: 5px;
+    font-size: 15px;
   }
   .top-stat {
     padding-top: 50px;
