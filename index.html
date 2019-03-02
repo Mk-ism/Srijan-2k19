@@ -14,8 +14,10 @@
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script src="assets/js/three.min.js"></script>
 </head>
-<body>
+<body onload="myFunction()">
 
+<!-- preloader -->
+<div id="pre-load"></div>
 
 <!-- navigation logo -->
 <nav class="navbar" style="position:fixed ">
@@ -69,7 +71,7 @@
   </div>
 
 <!-- First section -->
-  <div id="section1" class="section section_1">
+  <div id="section1" class="section">
     <div class="text">
       <h2 style="text-align: center;">
         ABOUT US
@@ -81,7 +83,7 @@
   </div>
 
 <!-- Second Section -->
-  <div id="section2" class="section section_1">
+  <div id="section2" class="section">
     <div class="text">
         <h2 style="text-align: center;">
             About Theme
@@ -93,7 +95,7 @@
   </div>
 
 <!-- Third Section -->
-  <div id="section3" class="section section_1">
+  <div id="section3" class="section">
     <div class="top-stat">
       <h2 class="heading" style="color: black;">Statistics</h2>
       <div class="flex-container" id="counter">
@@ -158,9 +160,7 @@
   </div>
 
   <!-- Fourth Section -->
-  <div id="section4" class="section footer section_1">
-      <!-- <h1>i am footer.</h1> -->
-
+  <div id="section4" class="section">
       <div class="text">
         <div class="site-map">
             <table>
@@ -233,6 +233,15 @@
     </div>
   </div>
 </div>
+
+<!-- Preloader function -->
+<script>
+  var delay = 4000;
+  var preloader = document.getElementById('pre-load');
+  setTimeout (function myFunction() {
+    preloader.style.display = 'none';
+  }, delay);
+</script>
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="assets/js/jquery-3.3.1.min.js"></script>

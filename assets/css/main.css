@@ -5,6 +5,16 @@ html {
   height: 100%;
   overflow: hidden;
 }
+
+#pre-load {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: greenyellow url(../images/loader.svg) no-repeat;
+  background-position: center;
+  z-index: 99999;
+}
+
 body { 
   margin:0;
   padding:0;
@@ -52,7 +62,7 @@ p {
 
 /*SECTION DATA BOXES*/
 .text {
-  width: 50%;
+  width: 60%;
   top: 65%;
   padding: 5px 50px;
   border-radius: 5px;
@@ -86,7 +96,7 @@ p {
 @media screen and (max-width: 600px) {
   .text {
     font-size: 10px;
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -109,15 +119,6 @@ p {
     width: 70%;
   }
 }
-
-
-
-/* .header, .footer {
-  text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
-} */
 
 
 
