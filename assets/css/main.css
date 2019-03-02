@@ -50,8 +50,8 @@ p {
 
 /*SECTION DATA BOXES*/
 .text {
-  width: 60%;
-  top: 65%;
+  width: 80%;
+  top: 60%;
   padding: 5px 50px;
   border-radius: 5px;
   /* background: rgba(200,200,200, .7); */
