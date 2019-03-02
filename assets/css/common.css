@@ -227,6 +227,15 @@
   border-radius: 2px; */
 }
 
+.btn > a{
+  text-decoration:none;
+  color: #ffffff;
+}
+
+.btn > a:hover{
+  color: #00dddd;
+}
+
 @media screen and (max-width: 600px) {
   .btn {
     font-size: 20px;
@@ -239,11 +248,8 @@
   }
 }
 
-.btn > a{
-  text-decoration:none;
-  color: #ffffff;
-}
-
-.btn > a:hover{
-  color: #00dddd;
+@media (orientation: portrait) {
+	.btn_ctnr {
+		z-index: -1000000;
+	}
 }

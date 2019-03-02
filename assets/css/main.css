@@ -127,7 +127,7 @@ p {
   height: 100vh;
 }
 #section4{
-  background-image: linear-gradient(to right bottom, #8c0d97, #7c0074, #680056, #52003b, #3b0325);
+  background-image: linear-gradient(to right bottom, #204206, #3c3200, #491e00, #490913, #3b0325);
   height: 100vh;
   overflow: hidden;
 }
@@ -193,23 +193,24 @@ p {
 #section4 > h2 {
   text-align: center;
 }
-.quick-links > a{
+.sec4-flex > a{
   cursor: pointer;
-  color: #ffffff;
-  text-decoration:none;
+  color: #eef2bf;
+  text-decoration: none;
 }
 .quick-links > a:hover{
   color: #00dddd;
 }
 @media screen and (max-width: 600px) {
   .site-map {
-    width: 90%;
+    width: 100%;
   }
   .sec4-flex {
     width: 100px;
-    font-size: .8em;
+    font-size: 1em;
     padding: 5px;
     margin: 5px;
     line-height: 1px;
+    color: white;
   }
 }
