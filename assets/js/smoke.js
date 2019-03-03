@@ -22,7 +22,7 @@ function init() {
 
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
 	camera.position.z = 1000;
-	if(window.innerWidth/window.innerHeight < 1) camera.position.z+=200;
+	if(window.innerWidth/window.innerHeight < 1) camera.position.z = 1200;
     scene.add( camera );
 
     geometry = new THREE.CubeGeometry( 200, 200, 200 );
@@ -58,7 +58,9 @@ function init() {
     }
 
     document.getElementById('hero').appendChild( renderer.domElement );
-
+	window.addEventListener( 'resize', onWindowResize, false );
+	document.getElementById('hero').addEventListener('mousemove', onMouseMove);
+	document.getElementById('hero').addEventListener('mouseleave', onMouseLeave);
 }
 
 function animate() {
@@ -86,11 +88,11 @@ function render() {
     cubeSineDriver += .01;
 	mesh.position.z = 100 + (Math.sin(cubeSineDriver) * 500);
 
-	if(camera.position.x < posX) camera.position.x += 0.5;
-	else if(camera.position.x > posX) camera.position.x -= 0.5;
+	if(camera.position.x < posX) camera.position.x += 0.3;
+	else if(camera.position.x > posX) camera.position.x -= 0.3;
 
-	if(camera.position.y < posY) camera.position.y += 0.3;
-	else if(camera.position.y > posY) camera.position.y -= 0.3;
+	if(camera.position.y < posY) camera.position.y += 0.15;
+	else if(camera.position.y > posY) camera.position.y -= 0.15;
 
     // window.addEventListener('scroll', function(event){
         // currentPos = event.pageY;
@@ -102,12 +104,19 @@ function render() {
 
 }
 
-document.getElementById('hero').addEventListener('mousemove', function(event){
+function onWindowResize() {
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	if(window.innerWidth/window.innerHeight < 1) camera.position.z = 1200;
+}
+
+function onMouseMove(event){
 	posX = -event.clientX/75;
 	posY = +event.clientY/50;
-});
+}
 
-document.getElementById('hero').addEventListener('mouseleave', function(event){
+function onMouseLeave(){
 	posX = 0;
 	posY = 0;
-});
+}
