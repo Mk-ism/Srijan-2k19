@@ -2,7 +2,6 @@ html {
   height: 100%;
   overflow: hidden;
 }
-
 #pre-load {
   position: fixed;
   width: 100%;
@@ -13,34 +12,30 @@ html {
   background-size: 40%;
   z-index: 99999;
 }
-
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   height: 100%;
   font-family: 'Raleway', sans-serif;
 }
-
 .main-sections {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
   perspective: 1px;
   scroll-behavior: smooth;
-
 }
-
 /*SECTION PARTS SIZING*/
+
 p {
   text-align: center;
   font-size: 1.2em;
   line-height: 150%;
   color: white;
 }
-
-h2{
+h2 {
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -53,8 +48,8 @@ h2{
   /* box-shadow: 0 5px 1px rgba(0, 0, 0, .7), 0 -5px 1px rgba(0, 0, 0, .7); */
   background: 50% 50% / cover;
 }
-
 /*SECTION DATA BOXES*/
+
 .text {
   width: 80%;
   padding: 5px 50px;
@@ -63,21 +58,21 @@ h2{
   box-shadow: 0 0 10px rgba(0, 0, 0, .8);
   position: relative;
 }
-
 /* Different section properties */
-#section1 .text{
+
+#section1 .text {
   position: absolute;
   bottom: 0%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  background-image: linear-gradient(to right top, #11305e, #006399, #0097a5, #00c777, #a8eb12);  opacity: .8;
+  background-image: linear-gradient(to right top, #11305e, #006399, #0097a5, #00c777, #a8eb12);
+  opacity: .8;
 }
-
-#section1 p{
+#section1 p {
   padding-bottom: 2%;
 }
-#section2 .text{
+#section2 .text {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -85,26 +80,20 @@ h2{
   box-shadow: none;
   margin-left: auto;
   margin-right: auto;
-
 }
-
-#section2 p{
+#section2 p {
   color: #aaa;
 }
-
-#section3 .text{
+#section3 .text {
   top: 60%;
   margin-left: auto;
   margin-right: 0;
 }
-
 @media screen and (max-width: 600px) {
   #section2 .text {
     opacity: .8;
   }
 }
-
-
 @media screen and (min-width: 601px) {
   .text {
     font-size: 1em;
@@ -119,8 +108,7 @@ h2{
     opacity: .6;
   }
 }
-
-#section4 .text{
+#section4 .text {
   top: 30%;
   left: 2%;
   width: 80%;
@@ -129,22 +117,21 @@ h2{
   margin-right: auto;
   box-shadow: none;
 }
-
 @media screen and (max-width: 600px) {
   #section4 .text {
     font-size: 15px;
     width: 70%;
   }
 }
-
 /*SECTION IMAGES*/
+
 #title {
   background-attachment: fixed;
 }
-#section1{
+#section1 {
   background-image: url("../images/div2.png");
   transform: translateZ(-1px) scale(2.1);
-  z-index:-1;
+  z-index: -1;
   height: 100vh;
 }
 #section2 {
@@ -153,20 +140,18 @@ h2{
   height: 100vh;
   z-index: 5;
 }
-#section3{
+#section3 {
   background: #12082a url(../images/div3.svg) no-repeat center bottom;
   background-attachment: fixed;
   transform: translateZ(-.9px) scale(2);
-  z-index:-1;
+  z-index: -1;
   height: 100vh;
-
 }
-#section4{
+#section4 {
   background-image: linear-gradient(to right bottom, #204206, #3c3200, #491e00, #490913, #3b0325);
   height: 100vh;
   overflow: hidden;
   font-family: Lato, sans-serif;
-
 }
 /* ########################### Section3 css ############################# */
 
@@ -180,18 +165,18 @@ h2{
   margin: 10px;
   text-align: center;
   /* line-height: 2px; */
-  font-size	: 15px;
+  font-size: 15px;
   top: 10%;
 }
-.heading{
+.heading {
   font-family: 'Raleway', Verdana, 'Geneva', Tahoma, sans-serif;
   padding-bottom: 15px;
   text-align: center;
 }
-.counter1{
+.counter1 {
   margin: 10px;
 }
-.stats{
+.stats {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -208,7 +193,7 @@ h2{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  }
+}
 @media (orientation: portrait) {
   .stats {
     padding: 1px;
@@ -219,7 +204,6 @@ h2{
     font-size: 8px;
     margin: 5px;
     width: 40%;
-
   }
   .heading {
     padding-bottom: 5px;
@@ -229,26 +213,24 @@ h2{
     padding-top: 5px;
   }
 }
-
-
 /* ########################### Section4 css ############################# */
 
 .site-map {
-  margin:0 auto;
+  margin: 0 auto;
   width: 80%;
 }
 .flex-container2 {
   display: flex;
-  width:80%;
+  width: 80%;
   flex-wrap: wrap;
   justify-content: center;
-  margin:auto;
+  margin: auto;
 }
-.sec4-flex{
+.sec4-flex {
   width: 150px;
   margin: 1px;
   padding: 15px;
-  text-align: center; 
+  text-align: center;
   font-size: 1.25em;
   line-height: 5px;
   color: #e8e5be;
@@ -256,12 +238,12 @@ h2{
 #section4 > h2 {
   text-align: center;
 }
-.sec4-flex > a{
+.sec4-flex > a {
   cursor: pointer;
   color: #eef2bf;
   text-decoration: none;
 }
-.quick-links > a:hover{
+.quick-links > a:hover {
   color: #00dddd;
 }
 @media screen and (max-width: 600px) {
@@ -277,36 +259,77 @@ h2{
     color: white;
   }
 }
-
-
 /* howering effect */
-.slide-left-right
-{
-text-decoration:none;
-color: red;
-position:relative; /* prepare for sliding from right to left */
+
+.slide-left-right {
+  text-decoration: none;
+  color: red;
+  position: relative;
+  /* prepare for sliding from right to left */
 }
 /* add a empty string after the elment with class .slide-right-left  */
-.slide-left-right:after 
-{
-content: '';
-display: block;
-height: 3px;
-width: 0;
-background: transparent;
-transition: width .5s ease, background-color .5s ease;
--webkit-transition: width .5s ease, background-color .5s ease;
--moz-transition: width .5s ease, background-color .5s ease;
- 
-/* position the content to the right bottom corner of the parent element to make it slide from right to left on hover */
-position:absolute;
-right:0;
-bottom:0;
+
+.slide-left-right:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+  /* position the content to the right bottom corner of the parent element to make it slide from right to left on hover */
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 /* Change the width and background on hover, aka sliding out */
-.slide-left-right:hover:after 
-{
-width: 100%;
-background: red;
+
+.slide-left-right:hover:after {
+  width: 100%;
+  background: red;
+}
+
+#title>h2{
+  width: 80%;
+  position: absolute;
+  font-size: 2em;
+  z-index: 9999;
+  bottom: 10%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  opacity: 0.8;
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+#title > h2 > #htxt{
+  display: none;
+}
+
+#title > h2:hover > #htxt{
+  display: inline;
+}
+
+#title > h2:hover > #nhtxt{
+  display: none;
+}
+
+@keyframes neon{
+  to{
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
 }
 
