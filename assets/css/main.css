@@ -39,6 +39,11 @@ p {
   line-height: 150%;
   color: white;
 }
+
+h2{
+  font-size: 1.5em;
+  font-weight: 700;
+}
 .section {
   position: relative;
   padding: 0;
@@ -52,7 +57,6 @@ p {
 /*SECTION DATA BOXES*/
 .text {
   width: 80%;
-  top: 60%;
   padding: 5px 50px;
   border-radius: 5px;
   /* background: rgba(200,200,200, .7); */
@@ -69,6 +73,10 @@ p {
   color: white;
   background-image: linear-gradient(to right top, #11305e, #006399, #0097a5, #00c777, #a8eb12);  opacity: .8;
 }
+
+#section1 p{
+  padding-bottom: 2%;
+}
 #section2 .text{
   position: relative;
   top: 50%;
@@ -77,12 +85,15 @@ p {
   box-shadow: none;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 #section2 p{
-  color: white;
+  color: #aaa;
 }
+
 #section3 .text{
+  top: 60%;
   margin-left: auto;
   margin-right: 0;
 }
@@ -223,12 +234,15 @@ p {
 /* ########################### Section4 css ############################# */
 
 .site-map {
-  width: 70%;
+  margin:0 auto;
+  width: 80%;
 }
 .flex-container2 {
   display: flex;
+  width:80%;
   flex-wrap: wrap;
   justify-content: center;
+  margin:auto;
 }
 .sec4-flex{
   width: 150px;
