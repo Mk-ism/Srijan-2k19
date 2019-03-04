@@ -290,6 +290,19 @@ h2 {
   background: red;
 }
 
+
+#htxt{
+  display: none;
+}
+
+h2:hover>#htxt{
+  display: inline;
+}
+
+h2:hover>#nhtxt{
+  display: none;
+}
+
 #title>h2{
   width: 80%;
   position: absolute;
@@ -304,24 +317,7 @@ h2 {
   font-family: Raleway, sans-serif;
   font-weight: 300;
   opacity: 0.8;
-  animation: neon 1s ease-in-out infinite alternate;
-}
-
-#title > h2 > #htxt{
-  display: none;
-}
-
-#title > h2:hover > #htxt{
-  display: inline;
-}
-
-#title > h2:hover > #nhtxt{
-  display: none;
-}
-
-@keyframes neon{
-  to{
-    text-shadow:
+  text-shadow:
       0 0 5px #fff,
       0 0 10px #fff,
       0 0 20px #fff,
@@ -332,4 +328,3 @@ h2 {
       0 0 150px #0ff;
   }
 }
-
