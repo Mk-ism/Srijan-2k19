@@ -1,0 +1,269 @@
+/* css of Navbar-srijan logo, social-icons, navbar-drawer, main page buttons */
+
+
+
+/* 1. Navbar logo */
+
+.navbar {
+	position: fixed ;
+	top: 0;
+	left: 0;
+	width: 100%;
+    z-index: 100;
+}
+
+.navbar-logo {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar-logo {
+		width: 60px;
+	}
+}
+
+
+
+/* 2. Social icon */
+
+.social-div {
+	position: fixed;
+	bottom: 8px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	display: flex;
+	padding: 0 17px;
+}
+
+.social-div a {
+	display: flex;
+	width: 45px;
+	font-size: 20px;
+	height: 45px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	color: #ccc;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.social-div {
+	padding: 0 7px;
+}
+
+.social-div a {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+}
+
+
+.social-div a:hover {
+	color: #ffffff;
+}
+
+.facebook:hover {
+	border: 1px solid #3c5a99;
+	background-color: #3c5a99;
+}
+
+.twitter:hover {
+	border: 1px solid #38A1F3;
+	background-color: #38A1F3;
+}
+
+.instagram:hover {
+	border: 1px solid #fb3958;
+	background-color: #fb3958;
+}
+
+.youtube:hover {
+	border: 1px solid #ff0000;
+	background-color: #ff0000;
+}
+
+
+
+/* 3. Nav bar new */
+
+.open {
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+}
+
+@media screen and (max-width: 600px) {
+    .open {
+		top: 15px;
+		right: 15px;
+		height: 30px;
+		width: 30px;
+    }
+}
+
+.open:hover {
+    opacity: 0.8;
+}
+
+.open span {
+    display: block;
+    float: left;
+    clear: both;
+    height: 4px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.open span:nth-child(1) { margin-top: 4px; }
+
+.open span:nth-child(2) { margin-top: 18px; }
+
+.open span:nth-child(3) { margin-top: 32px; }
+
+@media screen and (max-width: 600px) {
+    .open span {
+		height: 3px;
+		width: 30px;
+		border-radius: 30px;
+	}
+
+	.open span:nth-child(1) { margin-top: 3px; }
+
+	.open span:nth-child(2) { margin-top: 13.5px; }
+
+	.open span:nth-child(3) { margin-top: 24px; }
+}
+
+.sub-menu {
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    height: 0;
+    width: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(38, 84, 133, 0.54);
+    border-radius: 50%;
+    z-index: 90;
+    overflow: hidden;
+}
+
+.sub-menu li {
+    display: block;
+    float: right;
+    clear: both;
+    height: auto;
+    margin-right: -160px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sub-menu li:first-child { margin-top: 180px; }
+
+.sub-menu li:nth-child(1) { -webkit-transition-delay: 0.05s; }
+
+.sub-menu li:nth-child(2) { -webkit-transition-delay: 0.10s; }
+
+.sub-menu li:nth-child(3) { -webkit-transition-delay: 0.15s; }
+
+.sub-menu li:nth-child(4) { -webkit-transition-delay: 0.20s; }
+
+.sub-menu li:nth-child(5) { -webkit-transition-delay: 0.25s; }
+
+.sub-menu li a {
+    color: #fff;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    float: left;
+    line-height: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.oppenned .sub-menu {
+    opacity: 1;
+    height: 500px;
+    width: 500px;
+}
+
+.oppenned span:nth-child(2) { overflow: visible; }
+
+.oppenned span:nth-child(1),
+.oppenned span:nth-child(3) {
+    z-index: 100;
+    transform: rotate(45deg);
+}
+
+.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(12px) translateX(12px); }
+
+@media screen and (max-width: 600px) {
+	.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(9px) translateX(9px); }
+}
+
+.oppenned span:nth-child(2) {
+    height: 500px;
+    width: 500px;
+    right: -160px;
+    top: -160px;
+    border-radius: 50%;
+    background-color: rgba(38, 84, 133, 0.54);
+}
+
+.oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-10px) translateX(10px); }
+
+@media screen and (max-width: 600px) {
+	.oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-7.5px) translateX(7.5px); }
+}
+
+.oppenned li { margin-right: 168px; }
+
+
+
+/* 4. Main-page buttons */
+.btn_ctnr{
+    position: fixed;
+    top: 25px;
+    right: 100px;
+    display: inline-flex;
+    z-index: 110;
+}
+
+.btn{
+    margin: 0 15px;
+	font-size: 1.5em;
+	transition: all 0.3s ease 0s;
+}
+
+.btn > a{
+	padding: 3px 0;
+    text-decoration:none;
+    color: #c5c0d3;
+}
+
+.btn > a:hover{
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        display: none;
+    }
+}

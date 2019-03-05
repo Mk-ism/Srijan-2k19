@@ -1,0 +1,254 @@
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000 no-repeat;
+    background-image: url(../images/loader.svg);
+    background-position: center center;
+    background-size: 40%;
+    z-index: 99999;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+	background-color: black;
+}
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+	overflow: hidden;
+}
+
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.caption .border {
+    color: #ffffff;
+	padding: 20px;
+	width: 80%;
+	text-align: center;
+	font-family: 'Raleway', Verdana, 'Geneva', Tahoma, sans-serif;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+	.caption .border {
+		width: 90%;
+		font-size: 15px;
+	}
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+/* @media only screen and (max-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+} */
+
+#hero, #parallax-3 {
+	position: relative;
+}
+
+
+
+.slide-left-right {
+	text-decoration: none;
+	color: red;
+	position: relative;
+	/* prepare for sliding from right to left */
+}
+
+/* add a empty string after the elment with class .slide-right-left  */
+.slide-left-right:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+	-webkit-transition: width .5s ease, background-color .5s ease;
+	-moz-transition: width .5s ease, background-color .5s ease;
+	/* position the content to the right bottom corner of the parent element to make it slide from right to left on hover */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+/* Change the width and background on hover, aka sliding out */
+.slide-left-right:hover:after {
+	width: 100%;
+	background: red;
+}
+
+
+
+#hero > h2{
+	position: absolute;
+	left: 50%;
+	bottom: 7.5%;
+	width: 80%;
+	transform: translateX(-50%);
+	z-index: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	opacity: 0.8;
+	text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+@media screen and (max-width: 600px) {
+    #hero > h2 {
+		bottom: 10%;
+        font-size: 0.9em;
+    }
+}
+
+#hero > h2 > #htxt{
+	display: none;
+}
+
+#hero > h2:hover > #htxt{
+	display: inline;
+}
+
+#hero > h2:hover > #nhtxt{
+	display: none;
+}
+
+#parallax-2 .caption {
+    align-items: flex-end;
+}
+
+#parallax-2 .border {
+	color: rgba(255, 255, 255, 0.8);
+	background-image: linear-gradient(to right top, rgba(17, 48, 94, 0.8), rgba(0, 99, 153, 0.7), rgba(0, 151, 165, 0.75), rgba(0, 199, 119, 0.6), rgba(168, 235, 18, 0.6));
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 20px 5% 7.5% 5%;
+}
+
+#parallax-3 .caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+}
+
+#parallax-3 .border {
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.stats-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.stats-container .stats {
+	margin: 15px 30px;
+	width: 250px;
+}
+
+.stats-icon {
+	font-size: 42px;
+	margin-bottom: 5px;
+}
+
+.stats .counter {
+	font-size: 24px;
+}
+
+@media screen and (max-width: 1179px) {
+	.stats-container .stats {
+		margin: 10px 30px;
+	}
+
+	.stats .about-left {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.stats-icon {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 791px) {
+	.stats-container .stats {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.stats p {
+		padding: 0 20px;
+		flex: 1 1 0;
+		font-size: 16px;
+	}
+
+	.stats .about-left {
+		display: block;
+	}
+
+	.stats-icon {
+		font-size: 28px;
+	}
+
+	.stats .counter {
+		font-size: 18px;
+	}
+}
+
+#parallax-5 .border {
+	text-align: left;
+}
+
+#parallax-5 h2 {
+	padding-left: 15%;
+}
+
+.quick-links-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 15%;
+	align-items: center;
+}
+
+.quick-links-container > .cols {
+	padding: 10px;
+	margin: 10px;
+	width: 250px;
+}
+
+.quick-links-container > .cols > div {
+	margin: 10px 0;
+}
+
+.quick-links-container > .cols > div > a {
+	padding: 3px;
+	color: rgba(255, 255, 255, 0.7);
+	transition: all 0.3s ease 0s;
+}
+
+.quick-links-container > .cols > div > a:hover {
+	color: rgba(255, 255, 255, 1);
+}
