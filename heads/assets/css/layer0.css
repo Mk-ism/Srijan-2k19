@@ -1,11 +1,11 @@
 .layer-0 {
-  background: linear-gradient(190deg, #07074c 30%, #1111b2 60%, #5E5EFF);
   position: fixed;
   z-index: -10;
   left: 0;
   top:0;
   width: 100vw;
   height: 100vh;
+  transition: all 0.75s ease-out 0s;
 }
 
 .star:nth-child(1) {
@@ -3099,12 +3099,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 120%;
   height: auto;
   margin: 0;
   opacity: 1;
   border-radius: 0;
   background-color: transparent;
+  transition: all 0.3s ease-out 0s;
 }
 
 #layer1{

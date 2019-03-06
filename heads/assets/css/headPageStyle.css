@@ -1,30 +1,28 @@
 * {
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	color: #ffffff;
 }
-.links {
-	display: block;
-	position: absolute;
-	top: 5%;
-	right: 8%;
+body {
+	margin: 0;
+	background: linear-gradient(190deg, #07074c 30%, #1111b2 60%, #5E5EFF);
 }
-.links > li {
-	display: inline-block;
-	margin: 0 5px;
+h1 {
+	margin-top: 30px;
+	position: relative;
+	z-index: 0;
 }
-.links > li > a {
-	transition: 0.25 ease;
+.post {
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+.phone {
 	text-decoration: none;
-	font-family: "Raleway", "Lato", sans-serif;
-	color: white;
-}
-.links > li > a:hover {
-	color: #00dddd;
-	transition: 0.25s ease;
+	font-style: italic;
+	font-size: 14px;
 }
 .card {
-	margin: 5%;
+	margin: 2% 5% 5%;
 	transition: 0.5s;
 	width: 220px;
 	height: 354px;
@@ -57,16 +55,23 @@ img {
 .flex-container > .card > img:hover {
 	transition: 0.5s ease;
 }
-@media (orientation: portrait) or (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.flex-container > .card > img {
 		transition: 0.5s ease;
 	}
 }
+.navbar {
+	position: sticky ;
+	top: 0;
+	z-index: 100;
+	text-align: left;
+}
 .navbar-logo {
-	margin-top: 20px;
-	margin-left: 20px;
-	width: 50px;
-	position: relative;
-	top: -45%;
-	left: -45%;
+	margin-top: 10px;
+	width: 75px;
+}
+@media only screen and (max-width: 600px) {
+	.navbar-logo {
+		width: 40px;
+	}
 }

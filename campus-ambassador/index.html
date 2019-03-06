@@ -22,11 +22,36 @@
 				background-size: 40%;
 				z-index: 99999;
 			}
+
+			.fixed-navbar {
+				position: fixed ;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 100;
+			}
+
+			.navbar-logo {
+				margin-top: 10px;
+				width: 75px;
+			}
+
+			@media only screen and (max-width: 600px) {
+				.navbar-logo {
+					width: 40px;
+				}
+			}
 		</style>
 	</head>
 	<body onload="temp()">
 		<!-- preloader -->
 		<div id="preloader"></div>
+
+		<nav class="fixed-navbar">
+			<a href="https://srijaniitism.org/">
+				<img src="assets/brand_logo.png" class="navbar-logo" />
+			</a>
+		</nav>
 
 		<div id="app"></div>
 

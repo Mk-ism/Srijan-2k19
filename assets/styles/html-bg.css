@@ -3102,7 +3102,7 @@
   margin: 0;
   opacity: 1;
   z-index: 11;
-  transition: all 0.5s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 #layer1{

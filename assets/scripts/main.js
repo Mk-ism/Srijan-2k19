@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 function initialForestTranslate(){
 	document.getElementsByClassName('forest')[0].style.left = -document.getElementsByClassName('forest')[0].offsetWidth/12+'px';
-	document.getElementsByClassName('forest')[0].style.left = -document.getElementsByClassName('forest')[0].offsetWidth/12+'px';
+	document.getElementsByClassName('layer-0')[0].style.left = -document.getElementsByClassName('layer-0')[0].offsetWidth/12+'px';
 }
 
 // counter
